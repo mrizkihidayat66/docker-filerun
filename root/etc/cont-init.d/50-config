@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+mv /defaults/filerun-optimization.ini /etc/php7/conf.d/filerun-optimization.ini > /dev/null 2>&1
+
+ln -s /config/config.php /app/filerun/system/data/autoconfig.php
+
+chown -R abc:abc \
+	/app/filerun \
+	/config
