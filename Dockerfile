@@ -15,6 +15,7 @@ RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
     curl \
+	ffmpeg \
 	mariadb-client \
 	php7 \
 	php7-ctype \
@@ -22,6 +23,7 @@ RUN \
 	php7-exif \
 	php7-gd \
 	php7-json \
+	php7-imagick \
 	php7-mbstring \
 	php7-opcache \
 	php7-openssl \
