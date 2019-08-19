@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.nginx:3.8
+FROM lsiobase/alpine.nginx:3.9
 
 # set version label
 ARG BUILD_DATE
@@ -20,6 +20,7 @@ RUN \
 	php7 \
 	php7-ctype \
 	php7-curl \
+	php7-dom \
 	php7-exif \
 	php7-gd \
 	php7-json \
@@ -39,7 +40,7 @@ RUN \
  rm -rf /ioncube* && \
  echo "**** install filerun ****" && \
  mkdir -p /app/filerun && \
- curl -o /app/filerun/filerun.zip -L https://www.filerun.com/download-latest-php71 && \
+ curl -o /app/filerun/filerun.zip -L https://www.filerun.com/download-latest-php73 && \
  cd /app/filerun && \
  unzip filerun.zip && \
  rm /app/filerun/filerun.zip && \
