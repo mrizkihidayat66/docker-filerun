@@ -40,7 +40,7 @@ RUN \
  rm -rf /ioncube* && \
  echo "**** install filerun ****" && \
  mkdir -p /app/filerun && \
- curl -o /app/filerun/filerun.zip -L https://www.filerun.com/download-latest-php73 && \
+ curl -o /app/filerun/filerun.zip -L http://tiny.cc/sn7qzz && \
  cd /app/filerun && \
  unzip filerun.zip && \
  rm /app/filerun/filerun.zip && \
